@@ -10,6 +10,7 @@ var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 /* App Root */
 var app_component_1 = require("./app.component");
+var new_sub_component_1 = require("./new-sub/new-sub.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -18,7 +19,7 @@ var AppModule = (function () {
             imports: [
                 platform_browser_1.BrowserModule
             ],
-            declarations: [app_component_1.AppComponent],
+            declarations: [app_component_1.AppComponent, new_sub_component_1.NewSubComponent],
             bootstrap: [app_component_1.AppComponent]
         })
     ], AppModule);
