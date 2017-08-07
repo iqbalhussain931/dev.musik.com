@@ -1,9 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
     selector: 'my-app',
-    template: `
-        Working Angular + Laravel <app-new-sub>Loading...</app-new-sub>
-    `
+    templateUrl: './app.component.html'
 })
-export class AppComponent {}
+export class AppComponent implements OnInit {
+    public loaded = true;
+
+    ngOnInit() {
+        this.loaded = true;
+    }
+}
